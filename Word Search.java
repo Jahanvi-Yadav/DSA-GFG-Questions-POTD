@@ -1,4 +1,5 @@
 //WAP OF WORD SEARCH
+// THIS IS A GFG - POTD QUESTION OF WORD SEARCH USING JAVA. 
 class Solution 
 {
     private boolean dfs(char mat[][], String word,int index, int x, int y)
