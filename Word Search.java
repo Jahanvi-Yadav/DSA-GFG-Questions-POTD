@@ -27,7 +27,7 @@ class Solution
     
     public boolean isWordExist(char[][] mat, String word)
     {
-        // Code here
+        //     Main Code 
         int n= mat.length;
         int m= mat[0].length;
         boolean ans=false;
