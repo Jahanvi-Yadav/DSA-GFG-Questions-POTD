@@ -1,3 +1,4 @@
+// GFG POTD QUESTION USING JAVA. 
 class Solution {
     public void rearrangeQueue(Queue<Integer> q) {
         // code here
