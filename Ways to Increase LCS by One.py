@@ -1,0 +1,27 @@
+#Given two strings s1 and s2 consisting of lowercase English letters of length n1 and n2 respectively, find the number of ways to insert exactly one character into string s1 such that the length of the Longest Common Subsequence (LCS) of both strings increases by exactly 1.
+class Solution:
+    def waysToIncreaseLCSBy1(self,s1,s2):
+        n,m=len(s1),len(s2)
+        p=[[0]*(m+1)for _ in range(n+1)]
+        q=[[0]*(m+1)for _ in range(n+1)]
+
+        # Prefix LCS
+        for i in range(n):
+            for j in range(m):
+                p[i+1][j+1]=p[i][j]+1 if s1[i]==s2[j] else max(p[i][j+1],p[i+1][j])
+
+        # Suffix LCS
+        for i in range(n-1,-1,-1):
+            for j in range(m-1,-1,-1):
+                q[i][j]=q[i+1][j+1]+1 if s1[i]==s2[j] else max(q[i+1][j],q[i][j+1])
+
+        l=p[n][m];c=0
+
+        # Count valid insertions
+        for i in range(n+1):
+            t=set()
+            for j,x in enumerate(s2):
+                if x not in t and p[i][j]+q[i][j+1]==l:
+                    c+=1
+                    t.add(x)
+        return c
