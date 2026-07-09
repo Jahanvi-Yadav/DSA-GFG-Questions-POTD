@@ -1,3 +1,3 @@
 ## 📊 GeeksforGeeks Stats
 
-[![GFG Stats](https://coding-cards.vercel.app/api/gfg-stats?action=profileCard&theme=dark&userName=jahanvi_yadav)](https://www.geeksforgeeks.org/profile/jahanvi_yadav)
+[![Coding Profile](https://coding-cards.vercel.app/api/gfg-stats?userName=jahanvi_yadav&action=ProfileCard&theme=dark)](https://www.geeksforgeeks.org/profile/jahanvi_yadav)
