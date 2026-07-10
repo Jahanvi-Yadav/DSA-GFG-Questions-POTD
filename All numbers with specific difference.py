@@ -1,4 +1,5 @@
 '''Given a positive number n and a number d.
+
 Find the count of positive numbers smaller or equal to n such that the difference between the number and sum of its digits is greater than or equal to given specific value d.'''
 class Solution:
      def getCount(self, n, d):
